@@ -342,13 +342,19 @@ body {
     border-radius: 5px;
 }
 
-.test {
+.projects__item-article {
     transition: all 1s ease-out;
     background-color: white;
     border-radius: 5px;
 
     &:hover {
         transform: scale(1.1);
+    }
+
+    @media (max-width: 425px) {
+        &:hover{
+            transform: none;
+        }
     }
 }
 

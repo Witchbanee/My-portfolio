@@ -397,16 +397,23 @@ body {
   border-radius: 5px;
 }
 
-.test {
+.projects__item-article {
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
   background-color: white;
   border-radius: 5px;
 }
 
-.test:hover {
+.projects__item-article:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media (max-width: 425px) {
+  .projects__item-article:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 .projects__item-top--one-project {
