@@ -350,12 +350,6 @@ body {
     &:hover {
         transform: scale(1.1);
     }
-
-    @media (max-width: 425px) {
-        &:hover{
-            transform: none;
-        }
-    }
 }
 
 .projects__item-top--one-project {

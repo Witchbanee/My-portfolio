@@ -409,13 +409,6 @@ body {
           transform: scale(1.1);
 }
 
-@media (max-width: 425px) {
-  .projects__item-article:hover {
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
 .projects__item-top--one-project {
   background-image: url(../img/one-project.png);
   background-repeat: no-repeat;
