@@ -409,6 +409,20 @@ body {
           transform: scale(1.1);
 }
 
+@media (max-width: 425px) {
+  .projects__item-article:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.projects__item-top--another-project {
+  background-image: url(../img/another-project.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+}
+
 .projects__item-top--one-project {
   background-image: url(../img/one-project.png);
   background-repeat: no-repeat;
@@ -465,6 +479,10 @@ body {
           flex-direction: column;
   position: relative;
   border-radius: 10px;
+}
+
+.projects__item:last-child {
+  margin-top: 30px;
 }
 
 @media (max-width: 1590px) {
