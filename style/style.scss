@@ -349,6 +349,26 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
+
+    &--nft-project {
+        background-image: url(../img/project__nft.png);
+    }
+
+    &--movee-project {
+        background-image: url(../img/project__movee.png);
+    }
+
+    &--weiss-project {
+        background-image: url(../img/project__weiss.png);
+    }
+
+    &--portfolio-project {
+        background-image: url(../img/project__portfolio.png);
+    }
+    
+    &--sedona-project {
+        background-image: url(../img/project__sedona.png);
+    }
 }
 
 .projects__item-article {

@@ -353,6 +353,21 @@ body {
   background-size: cover;
   max-width: 100%;
 }
+.projects__item-top--nft-project {
+  background-image: url(../img/project__nft.png);
+}
+.projects__item-top--movee-project {
+  background-image: url(../img/project__movee.png);
+}
+.projects__item-top--weiss-project {
+  background-image: url(../img/project__weiss.png);
+}
+.projects__item-top--portfolio-project {
+  background-image: url(../img/project__portfolio.png);
+}
+.projects__item-top--sedona-project {
+  background-image: url(../img/project__sedona.png);
+}
 
 .projects__item-article {
   transition: all 1s ease-out;
