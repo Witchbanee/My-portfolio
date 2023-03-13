@@ -73,6 +73,7 @@ ul li {
 
 img {
   vertical-align: top;
+  width: 100%;
 }
 
 h1,
@@ -94,6 +95,7 @@ a {
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 15px;
+  min-width: 280px;
 }
 
 @media (max-width: 1200px) {
@@ -185,6 +187,15 @@ li {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+.header__links-list::before {
+  content: "";
+  background-color: #fbbae9;
+  filter: blur(110px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
 }
 @media (max-width: 1590px) {
   .header__links-list {
@@ -325,6 +336,7 @@ body {
 }
 @media (max-width: 1590px) {
   .projects__list {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -356,23 +368,23 @@ body {
   }
 }
 
-.projects__item-top--nft-project {
+.projects__item--nft-project {
   background-image: url(../img/project__nft.png);
 }
 
-.projects__item-top--movee-project {
+.projects__item--movee-project {
   background-image: url(../img/project__movee.png);
 }
 
-.projects__item-top--weiss-project {
+.projects__item--weiss-project {
   background-image: url(../img/project__weiss.png);
 }
 
-.projects__item-top--portfolio-project {
+.projects__item--portfolio-project {
   background-image: url(../img/project__portfolio.png);
 }
 
-.projects__item-top--sedona-project {
+.projects__item--sedona-project {
   background-image: url(../img/project__sedona.png);
 }
 
@@ -409,44 +421,27 @@ body {
   }
 }
 
-.item--one::before,
-.item--three::before {
+.projects__item--movee-project::before,
+.projects__item--portfolio-project::before,
+.projects__item--sedona-project::before {
   content: "";
   background-color: #baccfb;
   filter: blur(110px);
   width: 100%;
-  height: 830px;
+  height: 100%;
   position: absolute;
   z-index: -2;
-  top: -100px;
 }
 
-@media (max-width: 1590px) {
-  .item--one::before {
-    top: -225px;
-  }
-}
-
-@media (max-width: 1590px) {
-  .item--three::before {
-    height: 450px;
-  }
-}
-@media (max-width: 1023px) {
-  .item--three::before {
-    height: 600px;
-  }
-}
-
-.item--two::before {
+.projects__item--weiss-project::before,
+.projects__item--nft-project::before {
   content: "";
   background-color: #fbbae9;
   filter: blur(110px);
   width: 100%;
-  height: 830px;
+  height: 100%;
   position: absolute;
   z-index: -1;
-  top: -100px;
 }
 
 .project__item-technology-block {
